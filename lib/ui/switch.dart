@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fludo/ui/constants.dart';
+import 'package:fludo/ui/style/constants.dart';
 
 class SwitchButton extends StatefulWidget {
   const SwitchButton({Key? key}) : super(key: key);
@@ -29,7 +29,7 @@ class SwitchButtonState extends State<SwitchButton>
   void _initAnimationController() {
     _controller = AnimationController(
       vsync: this,
-      duration: Duration(milliseconds: 400),
+      duration: const Duration(milliseconds: 400),
     )..addStatusListener(_handleAnimationStatus);
   }
 
